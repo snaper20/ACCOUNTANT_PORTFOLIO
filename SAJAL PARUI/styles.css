@@ -1,0 +1,533 @@
+/* Global Styles */
+
+  
+
+body {
+  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ad1212;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(to border, #040404, #bbb5b5);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: rgb(68, 142, 28);
+  font-size: 80px;
+  font-weight: bold;
+  
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #999;
+}
+
+.mode-toggle {
+  position: relative;
+}
+
+.checkbox {
+  display: none;
+}
+
+.toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 25px;
+  background-color: #888;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-label:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background-color: #FFF;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.checkbox:checked + .toggle-label {
+  background-color: #444;
+}
+
+.checkbox:checked + .toggle-label:before {
+  transform: translateX(25px);
+}
+
+/* Home Section Styles */
+#home {
+  
+  background: linear-gradient(to bottom, #7b17c2, #dfc6f8);
+
+  color: #333;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.landing {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.client-image {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 8px solid #000;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.client-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landing h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.landing h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #000000;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+/* About Section Styles */
+#about {
+  background: linear-gradient(to border, #9f1304, #f5b0a8);
+
+  color: #333;
+  padding: 80px 0;
+  text-align: center;
+}
+
+
+
+
+/* Services Section Styles */
+#services {
+  
+  background: linear-gradient(to bottom, #03866c, #6cf7d0);
+
+  padding: 80px 0;
+  text-align: center;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 40px;
+}
+
+.portfolio-item {
+  text-align: center;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+  background: linear-gradient(to bottom, #f1c40f, #f4f4f0);
+
+  color: #333;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-top: 40px;
+}
+
+.portfolio-item {
+  text-align: center;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contact Section Styles */
+#contact {
+  background: linear-gradient(to bottom, #049b43, #a9ecbc);
+
+  color: #333;
+  padding: 80px 0;
+  text-align: center;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Rest of the CSS styles */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #FFF;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #999;
+}
+
+/* Rest of the CSS styles */
+
+/* Dark Mode Styles */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #FFF;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #999;
+}
+
+/* Header Styles */
+header {
+  background-color: #F9F9F9;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+.nav-links li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.mode-toggle {
+  position: relative;
+}
+
+.checkbox {
+  display: none;
+}
+
+.toggle-label {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 50px;
+  height: 26px;
+  background-color: #DDD;
+  border-radius: 13px;
+  cursor: pointer;
+}
+
+.toggle-label:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  background-color: #FFF;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.checkbox:checked + .toggle-label {
+  background-color: #FFC107;
+}
+
+.checkbox:checked + .toggle-label:before {
+  transform: translateX(24px);
+}
+
+/* Rest of the CSS styles */
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #222;
+  color: #FFF;
+}
+
+.dark-mode header {
+  background-color: #111;
+}
+
+.dark-mode .logo {
+  color: #FFC107;
+}
+
+.dark-mode .nav-links li a {
+  color: #FFC107;
+}
+
+.dark-mode .toggle-label {
+  background-color: #FFC107;
+}
+
+.dark-mode .toggle-label:before {
+  transform: translateX(25px);
+}
+
+.dark-mode #home {
+  background-color: #111;
+  color: #FFF;
+}
+
+.dark-mode #about {
+  background-color: #222;
+  color: #FFF;
+}
+
+.dark-mode #services {
+  background-color: #111;
+  color: #FFF;
+}
+
+.dark-mode #portfolio {
+  background-color: #222;
+  color: #FFF;
+}
+
+.dark-mode #contact {
+  background-color: #111;
+  color: #FFF;
+}
+
+.dark-mode footer {
+  background-color: #111;
+  color: #FFF;
+}
+
+/* Additional Styles for Dark Mode */
+
+.dark-mode a {
+  color: #FFC107;
+}
+
+.dark-mode a:hover {
+  color: #FFD54F;
+}
+
+.dark-mode #home h1,
+.dark-mode #about h1,
+.dark-mode #services h1,
+.dark-mode #portfolio h1,
+.dark-mode #contact h1 {
+  color: #FFC107;
+}
+
+.dark-mode .mode-toggle .toggle-label {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* Animation Styles */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+.client-image {
+  width: 200px;
+  height: 200px;
+  background-image: url(path/to/client-image.jpg);
+  background-size: cover;
+  background-position: center;
+  animation: fadeIn 3s ease;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;
+}
